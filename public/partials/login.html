@@ -1,0 +1,10 @@
+<div id="login" ng-controller="loginCtrl">
+  <div id="triangle"></div>
+  <h1>Log in</h1>
+  <form>
+    <input type="name" placeholder="Username" ng-model="formData.username"/>
+    <input type="password" placeholder="Password" ng-model="formData.password"/>
+    <button type="submit" value="Log in" ng-click="login()">Log In</button>
+    <p class="tooltip" ng-model="error">{{error}}</p>
+  </form>
+</div>

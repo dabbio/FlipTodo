@@ -1,1 +1,1 @@
-var ngTodo = angular.module('ngTodo', ['ngResource', 'todoCtrl', 'todoService']);
+var ngTodo = angular.module('ngTodo', ['ngRoute', 'router', 'todoCtrl', 'login', 'todoService', 'userService']);

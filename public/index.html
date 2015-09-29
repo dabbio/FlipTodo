@@ -11,38 +11,20 @@
 
 
 </head>
-<body ng-controller="mainCtrl">
+<body>
 
-<div class="container">
-	<div class="row">
-		<h2>I've got {{ todos.length }} things left to do!</h2>
-	</div>
+<div class="container" ng-view>
 
-	<div class="row">
-		<div class="todo-item" ng-repeat="todo in todos">
-            <h1 class="options" ng-click="deleteTodo(todo._id)"><i class="fa fa-check"></i></h1>
-            <h1 class="options" ng-click="updateTodo(todo._id, todo.text)"><i class="fa fa-pencil-square-o"></i></h1>
-            <span class="todo-text">{{ todo.text }}</span>
-        </div>
-	</div>
-
-	<div class="row">
-		<div class="todo-form">
-			<form>
-				<div class="form-group">
-					<input type="text" class="form-control input-lg" placeholder="shit that needs doing" ng-model="formData.text">
-				</div>
-				<button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Do this!</button>
-			</form>
-		</div>
-	</div>
 </div>
 
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/angular/angular.min.js"></script>
-<script src="vendor/angular-resource/angular-resource.min.js"></script>
+<script src="vendor/angular-route/angular-route.min.js"></script>
 <script src="controllers/main.js"></script>
+<script src="controllers/login.js"></script>
 <script src="services/todos.js"></script>
+<script src="services/users.js"></script>
+<script src="router.js"></script>
 <script src="core.js"></script>
 
 </body>

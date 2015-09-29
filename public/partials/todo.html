@@ -1,0 +1,24 @@
+<div ng-controller="mainCtrl">
+	<div class="row">
+		<h2>I've got {{ todos.length }} things left to do!</h2>
+	</div>
+
+	<div class="row">
+		<div class="todo-item" ng-repeat="todo in todos">
+	        <h1 class="options" ng-click="deleteTodo(todo._id)"><i class="fa fa-check"></i></h1>
+	        <h1 class="options" ng-click="updateTodo(todo._id, todo.text)"><i class="fa fa-pencil-square-o"></i></h1>
+	        <span class="todo-text">{{ todo.text }}</span>
+	    </div>
+	</div>
+
+	<div class="row">
+		<div class="todo-form">
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="shit that needs doing" ng-model="formData.text">
+				</div>
+				<button type="submit" class="btn" ng-click="createTodo()">Do this!</button>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,31 @@
+{
+  "name": "FlipTodo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dabbio/FlipTodo",
+  "authors": [
+    "dan abbott <dan.abbott@hotmail.com>"
+  ],
+  "description": "Angular todo app with authentication",
+  "main": "server.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "todo",
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-resource": "~1.4.6",
+    "jquery": "~2.1.4"
+  }
+}

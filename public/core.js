@@ -1,0 +1,1 @@
+var ngTodo = angular.module('ngTodo', ['ngResource', 'todoCtrl', 'todoService']);

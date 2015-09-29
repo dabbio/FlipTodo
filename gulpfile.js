@@ -10,7 +10,8 @@ gulp.task('less', function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(minifyCss({compatibility: 'ie8'}))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./public/css'))
+    .pipe(livereload());
 });
 
 gulp.task('watch', function() {

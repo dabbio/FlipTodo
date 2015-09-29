@@ -1,2 +1,4 @@
 # FlipTodo
-Todo Angular application with auth
+Angular todo App with authentication
+
+By Dan Abbott

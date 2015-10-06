@@ -1,6 +1,5 @@
 # FlipTodo
-Angular todo App with authentication-ish
-(ran out of time)
+3 hour test to build a todo App.
 
 ## Requires Node
 
@@ -22,10 +21,11 @@ If successful you will be directed to todo page where you can add, remove and up
 
 If unsuccessful login you will get a message saying incorrect details.
 
+(if you can't get on and want to see the todo list just go to /#/todo)
+
 
 TODO
-- Actually do authentication properly.
-- Start again but make it less shit...
-
+- The authentication isn't actually authentication and is just faked. Id like to have implemented real authentication using passport.js.
+- Didn't get a chance to style it very well so the todo list is just functional atm.
 
 By Dan Abbott :)
